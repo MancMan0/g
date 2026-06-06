@@ -6,8 +6,8 @@
 #pragma once
 
 // ── Camera (calculated / not in SDK by name) ─────────────────
-#define CameraLocation                  0x170
-#define CameraRotation                  0x180
+#define CameraLocation                  0x178
+#define CameraRotation                  0x188
 #define Seconds                         0x190
 
 // ── Global Pointers ──────────────────────────────────────────
