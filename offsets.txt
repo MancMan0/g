@@ -8,7 +8,7 @@
 // ── Camera (calculated / not in SDK by name) ─────────────────
 #define CameraLocation                  0x178
 #define CameraRotation                  0x188
-#define Seconds                         0x190
+#define Seconds                         0x198
 
 // ── Global Pointers ──────────────────────────────────────────
 #define GNames                          0x194F09C0
