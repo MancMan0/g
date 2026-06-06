@@ -1,71 +1,121 @@
-#define CameraLocation 0x170
-#define CameraRotation 0x180
-#define Seconds 0x190
-#define GNames 0x194F09C0
-#define GEngine 0x1AD25A08
-#define ProcessEvent 0x723B6
-#define StaticFindObject 0x39983B
-#define UWORLD 0x1AD24020
-#define GAME_INSTANCE 0x248
-#define LOCAL_PLAYERS 0x38
-#define PLAYER_CONTROLLER 0x30
-#define LOCAL_PAWN 0x318          // updated: AcknowledgedPawn
-#define PAWN_PRIVATE 0x2E8        // updated: PlayerState::PawnPrivate
-#define ROOT_COMPONENT 0x1B0
-#define RELATIVE_LOCATION 0x140
-#define RELATIVE_ROTATION 0x158
-#define PLAYER_STATE 0x290        // updated: Pawn::PlayerState
-#define TEAM_INDEX 0xF11          // updated: FortPlayerStateAthena::TeamIndex
-#define GAME_STATE 0x1D0
-#define PLAYER_ARRAY 0x288
-#define MESH 0x2F0                // updated: Character::Mesh
-#define COMPONENT_TO_WORLD 0x1E0
-#define BONE_ARRAY 0x650
-#define BONE_ARRAY_CACHE 0x638
-#define LAST_SUBMIT_TIME 0x330
-#define LAST_SUBMIT_TIME_ON_SCREEN 0x2f0
-#define PERSISTENT_LEVEL 0x40
-#define ENGINE_OFFSET 0x175CAC68
-#define VIEWPORT_OFFSET 0xB70     // updated: Engine::GameViewport
-#define UWORLD_OFFSET 0x78
-#define VELOCITY 0x188
-#define CURRENT_WEAPON 0x988      // updated: FortPawn::CurrentWeapon
-#define WEAPON_DATA 0x5D8         // updated: FortWeapon::WeaponData
-#define DISPLAY_NAME 0x40
-#define HABANERO_COMPONENT 0x908  // updated: FortPlayerState::HabaneroComponent
-#define RANKED_PROGRESS 0xD8
-#define PLATFORM 0x400            // updated: FortPlayerState::Platform
-#define WEAPON_NAME 0x40
-#define ISDYING 0x710             // updated: FortPawn::bIsDying
-#define PLAYERNAME 0x9C8          // updated: PlayerName (calculated)
-#define DEFAULTFOV 0x374          // updated: FOV (calculated)
-#define BASEFOV 0x3B4
-#define PLAYER_ID 0x2ac
-#define PLAYERCAMERAMANAGER 0x368
-#define CONTROL_ROTATION 0x328
-#define AMMO_COUNT 0x10A4         // updated: FortWeapon::AmmoCount
-#define PROJECTILE_SPEED 0x238C
-#define PROJECTILE_GRAVITY 0x23C0
-#define LAST_RELOAD_TIME 0x14c8
-#define LAST_SUCCESSFUL_RELOAD_TIME 0x14cc
-#define CURRENT_RELOAD_DURATION 0x14D0   // updated: WeaponCoreAnimation reused slot
-#define LAST_FIRE_TIME 0x10d4
-#define LAST_FIRE_TIME_VERIFIED 0x10d8
-#define INITIAL_SQUAD_SIZE 0x19f8
-#define BISDBNO 0x839             // updated: FortPawn::bIsDBNO
-#define BISABOT 0x27A             // updated: FortPlayerState::bIsABot
-#define TARGETED_FORT_PAWN 0x1630 // updated: FortPlayerController::TargetedFortPawn
-#define KILL_SCORE 0xF28          // updated: FortPlayerStateAthena::KillScore
-#define REBOOT_COUNT 0x1894
-#define PLAYER_NAME_PRIVATE 0x308 // updated: FortPlayerState::PlayerNamePrivate
-#define LEVELS 0x1e0
-#define SEASON_LEVEL_UI_DISPLAY 0x122c
-#define AACTOR 0x148
-#define CURRENT_VEHICLE 0x2d20
-#define OVERLAPPING_BUILDINGS 0x1df8
-#define SPECTATORS 0xAB0
-#define SPECTATOR_ARRAY 0x108
-#define TIER 0xaa
-#define ITEM_NAME 0x38
-#define RECOIL_COMPONENT 0x1A8
-#define SPREAD_COMPONENT 0x1B0
+// offsets.h
+// Fortnite ++Fortnite+Release-41.00-CL-54618515
+// Updated: 06/06/2026
+
+#pragma once
+
+// ── Camera (calculated) ──────────────────────────────────────
+#define CameraLocation                  0x170
+#define CameraRotation                  0x180
+#define Seconds                         0x190
+
+// ── Global Pointers ──────────────────────────────────────────
+#define GNames                          0x194F09C0
+#define GEngine                         0x1AD25A08
+#define UWORLD                          0x1AD24020
+#define ENGINE_OFFSET                   0x175CAC68
+
+// ── Functions ────────────────────────────────────────────────
+#define ProcessEvent                    0x723B6
+#define StaticFindObject                0x39983B
+
+// ── UEngine ──────────────────────────────────────────────────
+#define VIEWPORT_OFFSET                 0xB70       // UEngine::GameViewport
+
+// ── UWorld ───────────────────────────────────────────────────
+#define GAME_INSTANCE                   0x248       // UWorld::OwningGameInstance
+#define GAME_STATE                      0x1D0       // UWorld::GameState
+#define PERSISTENT_LEVEL                0x38        // UWorld::PersistentLevel
+#define LEVELS                          0x1e0
+
+// ── UGameInstance ────────────────────────────────────────────
+#define LOCAL_PLAYERS                   0x38        // UGameInstance::LocalPlayers
+
+// ── ULocalPlayer ─────────────────────────────────────────────
+#define PLAYER_CONTROLLER               0x30
+
+// ── AGameStateBase ───────────────────────────────────────────
+#define PLAYER_ARRAY                    0x288       // AGameStateBase::PlayerArray
+
+// ── APlayerController ────────────────────────────────────────
+#define LOCAL_PAWN                      0x318       // APlayerController::AcknowledgedPawn
+#define PLAYERCAMERAMANAGER             0x328       // APlayerController::PlayerCameraManager
+
+// ── AController ──────────────────────────────────────────────
+#define CONTROL_ROTATION                0x2E8       // AController::ControlRotation
+
+// ── APlayerCameraManager ─────────────────────────────────────
+#define DEFAULTFOV                      0x284       // APlayerCameraManager::DefaultFOV
+#define BASEFOV                         0x3B4
+
+// ── APawn ────────────────────────────────────────────────────
+#define PLAYER_STATE                    0x290       // APawn::PlayerState
+
+// ── ACharacter ───────────────────────────────────────────────
+#define MESH                            0x2F0       // ACharacter::Mesh
+
+// ── AActor ───────────────────────────────────────────────────
+#define ROOT_COMPONENT                  0x1B0       // AActor::RootComponent
+#define AACTOR                          0x148
+
+// ── USceneComponent ──────────────────────────────────────────
+#define RELATIVE_LOCATION               0x140       // USceneComponent::RelativeLocation
+#define RELATIVE_ROTATION               0x158       // USceneComponent::RelativeRotation
+#define VELOCITY                        0x188       // USceneComponent::ComponentVelocity
+#define COMPONENT_TO_WORLD              0x1E0
+
+// ── USkeletalMeshComponent ───────────────────────────────────
+#define BONE_ARRAY_CACHE                0x9C8       // USkeletalMeshComponent::CachedBoneSpaceTransforms
+#define BONE_ARRAY                      0x9D8       // USkeletalMeshComponent::CachedComponentSpaceTransforms
+#define LAST_SUBMIT_TIME                0x330
+#define LAST_SUBMIT_TIME_ON_SCREEN      0x2f0
+
+// ── APlayerState ─────────────────────────────────────────────
+#define PAWN_PRIVATE                    0x2E8       // APlayerState::PawnPrivate
+#define PLAYER_NAME_PRIVATE             0x308       // APlayerState::PlayerNamePrivate
+#define PLAYER_ID                       0x2AC
+#define BISABOT                         0x27A       // ⚠ unverified in SDK
+
+// ── AFortPlayerState ─────────────────────────────────────────
+#define PLATFORM                        0x400       // AFortPlayerState::Platform
+#define HABANERO_COMPONENT              0x908       // AFortPlayerState::HabaneroComponent
+#define RANKED_PROGRESS                 0xD8
+
+// ── AFortPlayerStateAthena ───────────────────────────────────
+#define TEAM_INDEX                      0xF11       // AFortPlayerStateAthena::TeamIndex
+#define KILL_SCORE                      0xF28       // AFortPlayerStateAthena::KillScore
+#define SEASON_LEVEL_UI_DISPLAY         0x122c
+
+// ── AFortPawn ────────────────────────────────────────────────
+#define CURRENT_WEAPON                  0x988       // AFortPawn::CurrentWeapon
+#define PLAYERNAME                      0x9C8       // calculated
+#define ISDYING                         0x710       // ⚠ unverified in SDK
+#define BISDBNO                         0x839       // ⚠ unverified in SDK
+#define CURRENT_VEHICLE                 0x2d20
+#define OVERLAPPING_BUILDINGS           0x1df8
+#define REBOOT_COUNT                    0x1894
+
+// ── AFortPlayerController ────────────────────────────────────
+#define TARGETED_FORT_PAWN              0x1630      // AFortPlayerController::TargetedFortPawn
+#define INITIAL_SQUAD_SIZE              0x19f8
+#define SPECTATORS                      0xAB0
+#define SPECTATOR_ARRAY                 0x108
+
+// ── AFortWeapon ──────────────────────────────────────────────
+#define WEAPON_DATA                     0x5D8       // AFortWeapon::WeaponData
+#define WEAPON_NAME                     0x40
+#define DISPLAY_NAME                    0x40
+#define AMMO_COUNT                      0x10A4      // AFortWeapon::AmmoCount
+#define LAST_RELOAD_TIME                0x1070      // AFortWeapon::LastReloadTime
+#define LAST_SUCCESSFUL_RELOAD_TIME     0x1074      // AFortWeapon::LastSuccessfulReloadTime
+#define CURRENT_RELOAD_DURATION         0x1078      // AFortWeapon::CurrentReloadDuration
+#define LAST_FIRE_TIME                  0xFDC       // AFortWeapon::LastFireTime
+#define LAST_FIRE_TIME_VERIFIED         0xFE4       // AFortWeapon::LastFireTimeVerified
+#define PROJECTILE_SPEED                0x238C
+#define PROJECTILE_GRAVITY              0x23C0
+#define RECOIL_COMPONENT                0x1A8
+#define SPREAD_COMPONENT                0x1B0
+
+// ── Misc ─────────────────────────────────────────────────────
+#define TIER                            0xaa
+#define ITEM_NAME                       0x38
