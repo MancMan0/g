@@ -97,8 +97,8 @@
 #define LAST_SUBMIT_TIME                0x330       // USkinnedMeshComponent (internal — not named in SDK)
 
 // ── USkeletalMeshComponent ───────────────────────────────────
-#define BONE_ARRAY_CACHE                0x9C8       // USkeletalMeshComponent::CachedBoneSpaceTransforms ✔  (was 0x638 — FIXED)
-#define BONE_ARRAY                      0x9D8       // USkeletalMeshComponent::CachedComponentSpaceTransforms ✔  (was 0x650 — FIXED)
+#define BONE_ARRAY_CACHE                0x660       // USkeletalMeshComponent::CachedBoneSpaceTransforms ✔  (was 0x638 — FIXED)
+#define BONE_ARRAY                      0x650       // USkeletalMeshComponent::CachedComponentSpaceTransforms ✔  (was 0x650 — FIXED)
 
 // ── AFortPawn ────────────────────────────────────────────────
 #define CURRENT_WEAPON                  0x988       // AFortPawn::CurrentWeapon ✔
