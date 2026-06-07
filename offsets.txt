@@ -11,6 +11,9 @@
 #define Seeconds                        0x190
 #define CACHED_VIEW_INFO                0x180
 
+// ── APlayerController (Camera FOV) ───────────────────────────
+#define CAMERA_FOV                      0x374       // APlayerController + 0x374 (replicated FOV 0-1, multiply by 90)
+
 // ── Global Pointers ──────────────────────────────────────────
 #define GNames                          0x194F09C0
 #define GEngine                         0x1AD25A08
