@@ -99,7 +99,8 @@
 
 // ── USkeletalMeshComponent ───────────────────────────────────
 #define BONE_ARRAY_CACHE                0x660       // USkeletalMeshComponent::CachedBoneSpaceTransforms ✔  (was 0x638 — FIXED)
-#define BONE_ARRAY                      0x650       // USkeletalMeshComponent::CachedComponentSpaceTransforms ✔  (was 0x650 — FIXED)
+#define BONE_ARRAY                      0x650       // USkeletalMeshComponent::CachedComponentSpaceTransforms ✔
+#define CURRENT_READ_COMPONENT_TRANSFORMS 0x68      // USkeletalMeshComponent::CurrentReadComponentTransforms ✔  (was 0x48 — FIXED)
 
 // ── AFortPawn ────────────────────────────────────────────────
 #define CURRENT_WEAPON                  0x988       // AFortPawn::CurrentWeapon ✔
