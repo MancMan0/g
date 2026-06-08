@@ -1,7 +1,7 @@
 #pragma once
-#define CameraLocation 0x170
-#define CameraRotation 0x180
-#define Seeconds 0x190   //offsets::CameraRotation + 0x10
+#define CameraLocation 0x178
+#define CameraRotation 0x188
+#define Seeconds 0x198   //offsets::CameraRotation + 0x10
 // === Engine Globals ===
 #define GNames 0x19BC0640      // Name pool for string lookups
 #define GEngine 0x1A48AE48     // Global engine instance
