@@ -4,7 +4,7 @@
 #define Seeconds 0x190   //offsets::CameraRotation + 0x10
 // === Engine Globals ===
 #define GNames 0x19BC0640      // Name pool for string lookups
-#define GEngine 0x1AD25A08     // Global engine instance
+#define GEngine 0x1A48AE48     // Global engine instance
 // === Function Offsets ===
 #define ProcessEvent 0xCC72AF   // AActor::ProcessEvent virtual function
 #define StaticFindObject 0x6AA817 // UObject::StaticFindObject
@@ -29,12 +29,12 @@
 #define LAST_SUBMIT_TIME 0x330           // LastRenderTime
 #define LAST_SUBMIT_TIME_ON_SCREEN 0x2F0
 #define PERSISTENT_LEVEL 0x38    // UWorld::PersistentLevel
-#define ENGINE_OFFSET   0x175CAC68
+#define ENGINE_OFFSET   0x1A48AE48
 #define VIEWPORT_OFFSET 0xB70
 #define UWORLD_OFFSET   0x78
 #define VELOCITY 0x188  // USceneComponent::ComponentVelocity
-#define CURRENT_WEAPON 0x988  // FortPawn::CurrentWeapon
-#define WEAPON_DATA 0x5D8  // FortWeapon::WeaponData
+#define CURRENT_WEAPON 0x998  // FortPawn::CurrentWeapon
+#define WEAPON_DATA 0x600  // FortWeapon::WeaponData
 #define DISPLAY_NAME 0x40
 #define HABANERO_COMPONENT 0x908
 #define RANKED_PROGRESS 0xD8  // FortPlayerStateComponent_Habanero::RankedProgress
@@ -43,7 +43,7 @@
 #define ISDYING 0x710  // FortPawn::bIsDying
 #define PLAYERNAME 0x9C8  // PlayerName
 #define DEFAULTFOV 0x2BC
-#define CachedViewInfoRenderedLastFrame 0x180    // CameraFOV
+#define CachedViewInfoRenderedLastFrame 0x190    // CameraFOV
 #define PLAYER_ID 0x2AC
 #define PLAYERCAMERAMANAGER 0x368
 #define CONTROL_ROTATION 0x328    // AController::ControlRotation (FRotator - 3 doubles: Pitch, Yaw, Roll)
@@ -69,13 +69,13 @@
 #define AACTOR 0x148                   // AActor
 #define CURRENT_VEHICLE 0x2D20         // CurrentVehicle
 #define OVERLAPPING_BUILDINGS 0x1DF8   // OverlappingBuildings
-#define SPECTATORS 0xAB0               // Spectators
-#define SPECTATOR_ARRAY 0x108          // SpectatorArray
+#define SPECTATORS 0xA70               // Spectators
+#define SPECTATOR_ARRAY 0x48           // SpectatorArray
 #define TIER 0xAA                      // Tier
 #define ITEM_NAME 0x38                 // ItemName
 #define BISCROUCHED 0x440              // bIsCrouched
 #define LOCATION_UNDER_RETICLE 0x2080  // FortPlayerController::LocationUnderReticle
-#define NET_CONNECTION 0x4A8           // NetConnection
+#define NET_CONNECTION 0x528           // NetConnection
 #define ROTATION_INPUT 0x4B0           // RotationInput
 #define WEAPON_OFFSET_CORRECTION 0x2230 // WeaponOffsetCorrection
 #define WEAPON_RECOIL_OFFSET 0x2218    // WeaponRecoilOffset
