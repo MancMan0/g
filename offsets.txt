@@ -94,7 +94,7 @@
 
 #define PLAYERCAMERAMANAGER 0x368
 
-#define BASEFOV 0x284
+#define BASEFOV 0x374
 
 #define CONTROL_ROTATION 0x328    // AController::ControlRotation (FRotator - 3 doubles: Pitch, Yaw, Roll)
 
