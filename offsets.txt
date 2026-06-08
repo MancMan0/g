@@ -6,10 +6,10 @@
 #define GNames 0x19BC0640      // Name pool for string lookups
 #define GEngine 0x1A48AE48     // Global engine instance
 // === Function Offsets ===
-#define ProcessEvent 0xCC72AF   // AActor::ProcessEvent virtual function
-#define StaticFindObject 0x6AA817 // UObject::StaticFindObject
+#define ProcessEvent 0xBD912   // AActor::ProcessEvent virtual function
+#define StaticFindObject 0x6AF146 // UObject::StaticFindObject
 // === Legacy UWorld (encrypted) ===
-#define UWORLD 0x1AD24020   //updated with DecryptUworld (same as GWorld)
+#define UWORLD 0x1A489460   //updated with DecryptUworld (same as GWorld)
 #define GAME_INSTANCE 0x248 // UWorld::OwningGameInstance
 #define LOCAL_PLAYERS 0x38  // UGameInstance::LocalPlayers
 #define PLAYER_CONTROLLER 0x30  // Uplayer::PlayerController
@@ -46,6 +46,7 @@
 #define CachedViewInfoRenderedLastFrame 0x190    // CameraFOV
 #define PLAYER_ID 0x2AC
 #define PLAYERCAMERAMANAGER 0x368
+#define BASEFOV 0x374
 #define CONTROL_ROTATION 0x328    // AController::ControlRotation (FRotator - 3 doubles: Pitch, Yaw, Roll)
 // WEAPON OFFSETS - Updated
 #define AMMO_COUNT 0x10A4              // Current ammo in magazine
