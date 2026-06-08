@@ -1,88 +1,89 @@
 #pragma once
+
+// --- Camera ---
 #define CameraLocation 0x178
 #define CameraRotation 0x188
-#define Seeconds 0x198   //offsets::CameraRotation + 0x10
-// === Engine Globals ===
-#define GNames 0x19BC0640      // Name pool for string lookups
-#define GEngine 0x1A48AE48     // Global engine instance
-// === Function Offsets ===
-#define ProcessEvent 0xBD912   // AActor::ProcessEvent virtual function
-#define StaticFindObject 0x6AF146 // UObject::StaticFindObject
-// === Legacy UWorld (encrypted) ===
-#define UWORLD 0x1A489460   //updated with DecryptUworld (same as GWorld)
-#define GAME_INSTANCE 0x248 // UWorld::OwningGameInstance
-#define LOCAL_PLAYERS 0x38  // UGameInstance::LocalPlayers
-#define PLAYER_CONTROLLER 0x30  // Uplayer::PlayerController
-#define LOCAL_PAWN 0x318             // APlayerController::AcknowledgedPawn
-#define PAWN_PRIVATE 0x2E8  // APlayerState::PawnPrivate
+#define Seeconds 0x198
+
+// --- Engine Globals ---
+#define GNames 0x19BC0640
+#define GEngine 0x19D0EE18
+
+// --- Function Offsets ---
+#define ProcessEvent 0x723B6
+#define StaticFindObject 0x39983B
+
+// --- Legacy UWorld (encrypted/decrypted) ---
+#define UWORLD 0x19D0D570
+#define GAME_INSTANCE 0x248
+#define LOCAL_PLAYERS 0x38
+#define PLAYER_CONTROLLER 0x30
+#define LOCAL_PAWN 0x318
+#define PAWN_PRIVATE 0x2E8
 #define ROOT_COMPONENT 0x1B0
 #define RELATIVE_LOCATION 0x140
 #define RELATIVE_ROTATION 0x158
-#define PLAYER_STATE 0x290       // APawn::PlayerState
-#define TEAM_INDEX 0xF11         // AFortPlayerStateAthena::TeamIndex
-#define GAME_STATE 0x1D0  // UWorld::GameState
-#define PLAYER_ARRAY 0x288       // AGameStateBase::PlayerArray
-#define MESH 0x2F0                // APawn::Mesh
-#define COMPONENT_TO_WORLD 0x1E0  // USceneComponent::ComponentToWorld
-#define BONE_ARRAY 0x650
-#define BONE_ARRAY_CACHE 0x660
-#define LAST_SUBMIT_TIME 0x330           // LastRenderTime
-#define LAST_SUBMIT_TIME_ON_SCREEN 0x2F0
-#define PERSISTENT_LEVEL 0x38    // UWorld::PersistentLevel
-#define ENGINE_OFFSET   0x1A48AE48
-#define VIEWPORT_OFFSET 0xB70
-#define UWORLD_OFFSET   0x78
-#define VELOCITY 0x188  // USceneComponent::ComponentVelocity
-#define CURRENT_WEAPON 0x998  // FortPawn::CurrentWeapon
-#define WEAPON_DATA 0x600  // FortWeapon::WeaponData
+#define PLAYER_STATE 0x290
+#define TEAM_INDEX 0xF11
+#define GAME_STATE 0x1D0
+#define PLAYER_ARRAY 0x288
+#define MESH 0x2F0
+#define COMPONENT_TO_WORLD 0x1E0
+#define BONE_ARRAY 0x628              // Updated from 0x650
+#define BONE_ARRAY_CACHE 0x638        // Updated from 0x660
+#define LAST_SUBMIT_TIME 0x330
+#define LAST_SUBMIT_TIME_ON_SCREEN 0x328
+#define PERSISTENT_LEVEL 0x40
+
+#define ENGINE_OFFSET 0x175CAC68
+#define VIEWPORT_OFFSET 0xAE0
+#define UWORLD_OFFSET 0x78
+
+// --- Actor / Pawn ---
+#define VELOCITY 0x188
+#define CURRENT_WEAPON 0x998
+#define WEAPON_DATA 0x628
 #define DISPLAY_NAME 0x40
-#define HABANERO_COMPONENT 0x908
-#define RANKED_PROGRESS 0xD8  // FortPlayerStateComponent_Habanero::RankedProgress
-#define PLATFORM 0x400  // FortPlayerState::Platform
+#define HABANERO_COMPONENT 0x948
+#define RANKED_PROGRESS 0xD8
+#define PLATFORM 0x440
 #define WEAPON_NAME 0x40
-#define ISDYING 0x710  // FortPawn::bIsDying
-#define PLAYERNAME 0x9C8  // PlayerName
-#define DEFAULTFOV 0x2BC
-#define CachedViewInfoRenderedLastFrame 0x190    // CameraFOV
-#define PLAYER_ID 0x2AC
-#define PLAYERCAMERAMANAGER 0x368
-#define BASEFOV 0x374
-#define CONTROL_ROTATION 0x328    // AController::ControlRotation (FRotator - 3 doubles: Pitch, Yaw, Roll)
-// WEAPON OFFSETS - Updated
-#define AMMO_COUNT 0x10A4              // Current ammo in magazine
-#define PROJECTILE_SPEED 0x238C        // ProjectileSpeed
-#define PROJECTILE_GRAVITY 0x23C0      // ProjectileGravity
-#define LAST_RELOAD_TIME 0x14C8        // Last reload timestamp
-#define LAST_SUCCESSFUL_RELOAD_TIME 0x14CC  // Last successful reload
-#define CURRENT_RELOAD_DURATION 0x14D0 // Current reload duration
-#define LAST_FIRE_TIME 0xFDC           // Last fire timestamp
-#define LAST_FIRE_TIME_VERIFIED 0xFE4  // Verified fire time
-// Additional offsets
-#define INITIAL_SQUAD_SIZE 0x19F8      // InitialSquadSize
-#define BISDBNO 0x839                  // bIsDBNO
-#define BISABOT 0x27A                  // bIsABot
-#define TARGETED_FORT_PAWN 0x1630      // TargetedFortPawn
-#define KILL_SCORE 0x1228              // KillScore
-#define REBOOT_COUNT 0x1894            // RebootCount
-#define PLAYER_NAME_PRIVATE 0x308      // PlayerNamePrivate
-#define LEVELS 0x1E0                   // Levels
-#define SEASON_LEVEL_UI_DISPLAY 0x122C // SeasonLevelUIDisplay
-#define AACTOR 0x148                   // AActor
-#define CURRENT_VEHICLE 0x2D20         // CurrentVehicle
-#define OVERLAPPING_BUILDINGS 0x1DF8   // OverlappingBuildings
-#define SPECTATORS 0xA70               // Spectators
-#define SPECTATOR_ARRAY 0x48           // SpectatorArray
-#define TIER 0xAA                      // Tier
-#define ITEM_NAME 0x38                 // ItemName
-#define BISCROUCHED 0x440              // bIsCrouched
-#define LOCATION_UNDER_RETICLE 0x2080  // FortPlayerController::LocationUnderReticle
-#define NET_CONNECTION 0x528           // NetConnection
-#define ROTATION_INPUT 0x4B0           // RotationInput
-#define WEAPON_OFFSET_CORRECTION 0x2230 // WeaponOffsetCorrection
-#define WEAPON_RECOIL_OFFSET 0x2218    // WeaponRecoilOffset
-#define PLAYER_AIM_OFFSET 0x2200       // PlayerAimOffset
-#define BISRELOADING 0x3B9             // bIsReloadingWeapon
-#define LAST_DAMAGED_TIME 0xCE0        // LastDamagedTime
-// These are in WeaponData (UFortWeaponItemDefinition), not AFortWeapon
+#define ISDYING 0x720
+#define PLAYERNAME 0x308
+#define DEFAULTFOV 0x284
+#define BASEFOV 0x284
+#define PLAYER_ID 0x274
+#define PLAYERCAMERAMANAGER 0x328
+#define CONTROL_ROTATION 0x2E8
+
+// --- Weapon Offsets ---
+#define AMMO_COUNT 0x116C
+#define PROJECTILE_SPEED 0x276C
+#define PROJECTILE_GRAVITY 0x2774
+#define LAST_RELOAD_TIME 0x14C8
+#define LAST_SUCCESSFUL_RELOAD_TIME 0x14CC
+#define CURRENT_RELOAD_DURATION 0x14D0
+#define LAST_FIRE_TIME 0x10D4
+#define LAST_FIRE_TIME_VERIFIED 0x10D8
+
+// --- Additional Offsets ---
+#define INITIAL_SQUAD_SIZE 0x19F8
+#define BISDBNO 0x849
+#define BISABOT 0x27A
+#define TARGETED_FORT_PAWN 0x1840
+#define KILL_SCORE 0x1228
+#define REBOOT_COUNT 0x1894
+#define PLAYER_NAME_PRIVATE 0x348
+#define LEVELS 0x1E8
+#define SEASON_LEVEL_UI_DISPLAY 0x122C
+#define AACTOR 0x148
+#define CURRENT_VEHICLE 0x2D20
+#define OVERLAPPING_BUILDINGS 0x1DF8
+#define SPECTATORS 0xAB0
+#define SPECTATOR_ARRAY 0x108
+#define TIER 0xAA
+#define ITEM_NAME 0x38
+
+// --- WeaponData (UFortWeaponItemDefinition) ---
 #define RECOIL_COMPONENT 0x1A8
 #define SPREAD_COMPONENT 0x1B0
