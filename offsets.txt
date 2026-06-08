@@ -43,7 +43,7 @@
 #define ISDYING 0x710  // FortPawn::bIsDying
 #define PLAYERNAME 0x9C8  // PlayerName
 #define DEFAULTFOV 0x2BC
-#define BASEFOV 0x180    // CameraFOV
+#define CachedViewInfoRenderedLastFrame 0x180    // CameraFOV
 #define PLAYER_ID 0x2AC
 #define PLAYERCAMERAMANAGER 0x368
 #define CONTROL_ROTATION 0x328    // AController::ControlRotation (FRotator - 3 doubles: Pitch, Yaw, Roll)
