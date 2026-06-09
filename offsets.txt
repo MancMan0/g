@@ -6,7 +6,7 @@
 
 // === Engine Globals ===
 #define GNames 0x19BC0640 // Name pool for string lookups
-#define GEngine 0x1A48AE48 // Global engine instance
+#define GEngine 0x1A46DE88 // Global engine instance
 
 // === Function Offsets ===
 #define ProcessEvent 0xBD912 // AActor::ProcessEvent virtual function
