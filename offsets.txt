@@ -1,10 +1,12 @@
 #pragma once
 
-#define CameraLocation 0x178
+#define CameraLocation 0x170
 
-#define CameraRotation 0x188
+#define CameraRotation 0x180
 
-#define Seeconds 0x198   //offsets::CameraRotation + 0x10
+#define Seeconds 0x190   //offsets::CameraRotation + 0x10
+
+#define DELTA_TIME 0x88C
 
 // === Engine Globals ===
 
@@ -54,9 +56,9 @@
 
 #define BONE_ARRAY_CACHE 0x660
 
-#define LAST_SUBMIT_TIME 0x530           // LastRenderTime
+#define LAST_SUBMIT_TIME 0x330           // LastRenderTime
 
-#define LAST_SUBMIT_TIME_ON_SCREEN 0x2F0
+#define LAST_SUBMIT_TIME_ON_SCREEN 0x328
 
 #define PERSISTENT_LEVEL 0x38    // UWorld::PersistentLevel
 
