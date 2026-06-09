@@ -54,7 +54,7 @@
 
 #define BONE_ARRAY_CACHE 0x660
 
-#define LAST_SUBMIT_TIME 0x330           // LastRenderTime
+#define LAST_SUBMIT_TIME 0x530           // LastRenderTime
 
 #define LAST_SUBMIT_TIME_ON_SCREEN 0x2F0
 
