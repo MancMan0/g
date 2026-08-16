@@ -6,15 +6,15 @@
 #define CachedViewInfoRenderedLastFrame 0x188
 
 // === Engine Globals ===
-#define GNames 0x19BC0640
-#define GEngine 0x1A46DE88
+#define GNames 0x1A5EF440
+#define GEngine 0x1A73E298
 
 // === Function Offsets ===
 #define ProcessEvent 0xBD912
 #define StaticFindObject 0x6AF146
 
 // === Legacy UWorld (encrypted) ===
-#define UWORLD 0x1A46C4A0
+#define UWORLD 0x1A73C8B0
 #define GAME_INSTANCE 0x248
 #define LOCAL_PLAYERS 0x38
 #define PLAYER_CONTROLLER 0x30
