@@ -1,59 +1,92 @@
-// ============================================================
-// Engine / Timing
-// ============================================================
-#define GEngine = 0x1A73E298;
-#define DELTA_TIME = 0x88C;
-#define Seeconds = 0x180;
-#define CachedViewInfoRenderedLastFrame = 0x188;
+	// Camera
+	#define CameraLocation = 0x170;
+	#define CameraRotation = 0x180;
+	#define CachedViewInfoRenderedLastFrame = 0x188;
+	#define Seeconds = 0x190;
+	#define DELTA_TIME = 0x88C;
 
-// ============================================================
-// Game / World
-// ============================================================
-#define GAME_INSTANCE = 0x240;
-#define GAME_STATE = 0x1C8;
-#define PLAYER_ARRAY = 0x288;
+	// === Engine Globals ===
+	#define GNames = 0x1A5EF440;
+	#define GEngine = 0x1A655088;
 
-// ============================================================
-// Local Player
-// ============================================================
-#define LOCAL_PLAYERS = 0x38;
-#define PLAYER_CONTROLLER = 0x30;
-#define LOCAL_PAWN = 0x318;
+	// === Function Offsets ===
+	#define ProcessEvent = 0xBD912;
+	#define StaticFindObject = 0x6AF146;
 
-// ============================================================
-// Pawn / Player
-// ============================================================
-#define PAWN_PRIVATE = 0x2E8;
-#define PLAYER_STATE = 0x290;
-#define TEAM_INDEX = 0xF31;
-#define PLAYERNAME = 0x9C8;
-#define BISABOT = 0x27A;
-#define ISDYING = 0x710;
+	// === Legacy UWorld (encrypted) ===
+	#define UWORLD = 0x1A6536B0;
+	#define GAME_INSTANCE = 0x240;
+	#define LOCAL_PLAYERS = 0x38;
+	#define PLAYER_CONTROLLER = 0x30;
+	#define LOCAL_PAWN = 0x318;
+	#define PAWN_PRIVATE = 0x2E8;
+	#define ROOT_COMPONENT = 0x1B0;
+	#define RELATIVE_LOCATION = 0x140;
+	#define RELATIVE_ROTATION = 0x158;
+	#define PLAYER_STATE = 0x290;
+	#define TEAM_INDEX = 0xF31;
+	#define GAME_STATE = 0x1C8;
+	#define PLAYER_ARRAY = 0x288;
+	#define MESH = 0x2F0;
+	#define COMPONENT_TO_WORLD = 0x1E0;
+	#define BONE_ARRAY = 0x648;
+	#define BONE_ARRAY_CACHE = 0x658;
+	#define LAST_SUBMIT_TIME = 0x330;
+	#define LAST_SUBMIT_TIME_ON_SCREEN = 0x328;
+	#define PERSISTENT_LEVEL = 0x38;
+	#define ENGINE_OFFSET = 0x1A655088;
+	#define VIEWPORT_OFFSET = 0xB70;
+	#define VELOCITY = 0x188;
+	#define CURRENT_WEAPON = 0x998;
+	#define WEAPON_DATA = 0x600;
+	#define DISPLAY_NAME = 0x40;
+	#define HABANERO_COMPONENT = 0x908;
+	#define RANKED_PROGRESS = 0xD8;
+	#define PLATFORM = 0x400;
+	#define WEAPON_NAME = 0x40;
+	#define ISDYING = 0x710;
+	#define PLAYERNAME = 0x9C8;
+	#define DEFAULTFOV = 0x2BC;
+	#define BASEFOV = 0x374;
+	#define PLAYER_ID = 0x2AC;
+	#define PLAYERCAMERAMANAGER = 0x368;
+	#define CONTROL_ROTATION = 0x328;
 
-// ============================================================
-// Components / Transform
-// ============================================================
-#define ROOT_COMPONENT = 0x1B0;
-#define RELATIVE_LOCATION = 0x140;
-#define RELATIVE_ROTATION = 0x158;
-#define VELOCITY = 0x188;
+	// WEAPON OFFSETS
+	#define AMMO_COUNT = 0x10A4;
+	#define PROJECTILE_SPEED = 0x238C;
+	#define PROJECTILE_GRAVITY = 0x23C0;
+	#define LAST_RELOAD_TIME = 0x14C8;
+	#define LAST_SUCCESSFUL_RELOAD_TIME = 0x14CC;
+	#define CURRENT_RELOAD_DURATION = 0x14D0;
+	#define LAST_FIRE_TIME = 0xFDC;
+	#define LAST_FIRE_TIME_VERIFIED = 0xFE4;
 
-// ============================================================
-// Mesh / Bones
-// ============================================================
-#define MESH = 0x2F0;
-#define COMPONENT_TO_WORLD = 0x1E0;
-#define BONE_ARRAY = 0x648;
-#define BONE_ARRAY_CACHE = 0x658;
-
-// ============================================================
-// Rendering
-// ============================================================
-#define LAST_SUBMIT_TIME = 0x330;
-#define LAST_SUBMIT_TIME_ON_SCREEN = 0x328;
-
-// ============================================================
-// Spectator
-// ============================================================
-#define SPECTATORS = 0xA70;
-#define SPECTATOR_ARRAY = 0x48;
+	// Additional offsets
+	#define INITIAL_SQUAD_SIZE = 0x19F8;
+	#define BISDBNO = 0x839;
+	#define BISABOT = 0x27A;
+	#define TARGETED_FORT_PAWN = 0x1630;
+	#define KILL_SCORE = 0x1228;
+	#define REBOOT_COUNT = 0x1894;
+	#define PLAYER_NAME_PRIVATE = 0x308;
+	#define LEVELS = 0x1E0;
+	#define SEASON_LEVEL_UI_DISPLAY = 0x122C;
+	#define AACTOR = 0x148;
+	#define CURRENT_VEHICLE = 0x2D20;
+	#define OVERLAPPING_BUILDINGS = 0x1DF8;
+	#define SPECTATORS = 0xA70;
+	#define SPECTATOR_ARRAY = 0x48;
+	#define TIER = 0xAA;
+	#define ITEM_NAME = 0x38;
+	#define BISCROUCHED = 0x440;
+	#define LOCATION_UNDER_RETICLE = 0x2080;
+	#define NET_CONNECTION = 0x528;
+	#define ROTATION_INPUT = 0x4B0;
+	#define WEAPON_OFFSET_CORRECTION = 0x2230;
+	#define WEAPON_RECOIL_OFFSET = 0x2218;
+	#define PLAYER_AIM_OFFSET = 0x2200;
+	#define BISRELOADING = 0x3B9;
+	#define LAST_DAMAGED_TIME = 0xCE0;
+	#define RECOIL_COMPONENT = 0x1A8;
+	#define SPREAD_COMPONENT = 0x1B0;
