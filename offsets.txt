@@ -32,6 +32,7 @@
 #define COMPONENT_TO_WORLD = 0x1E0;
 #define BONE_ARRAY = 0x648;
 #define BONE_ARRAY_CACHE = 0x658;
+#define BoneMatrix = 0x2D5148;
 #define LAST_SUBMIT_TIME = 0x330;
 #define LAST_SUBMIT_TIME_ON_SCREEN = 0x328;
 #define PERSISTENT_LEVEL = 0x38;
