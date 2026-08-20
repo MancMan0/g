@@ -1,4 +1,4 @@
-	// Camera
+	// Camera 
 	#define CameraLocation = 0x170;
 	#define CameraRotation = 0x180;
 	#define CachedViewInfoRenderedLastFrame = 0x188;
