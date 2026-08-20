@@ -1,8 +1,8 @@
 
 // Camera
-#define CameraLocation = 0x170;
-#define CameraRotation = 0x180;
-#define CachedViewInfoRenderedLastFrame = 0x188;
+#define CameraLocation = 0x168;
+#define CameraRotation = 0x178;
+#define CachedViewInfoRenderedLastFrame = 0x178;
 #define Seeconds = 0x190;
 #define DELTA_TIME = 0x88C;
 
@@ -30,8 +30,8 @@
 #define PLAYER_ARRAY = 0x288;
 #define MESH = 0x2F0;
 #define COMPONENT_TO_WORLD = 0x1E0;
-#define BONE_ARRAY = 0x648;
-#define BONE_ARRAY_CACHE = 0x658;
+#define BONE_ARRAY = 0x660;
+#define BONE_ARRAY_CACHE = 0x670;
 #define BoneMatrix = 0x2D5148;
 #define LAST_SUBMIT_TIME = 0x330;
 #define LAST_SUBMIT_TIME_ON_SCREEN = 0x328;
