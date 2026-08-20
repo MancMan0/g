@@ -7,14 +7,14 @@
 
 	// === Engine Globals ===
 	#define GNames = 0x1A5EF440;
-	#define GEngine = 0x1A655088;
+	#define GEngine = 0x1b157c88;
 
 	// === Function Offsets ===
 	#define ProcessEvent = 0xBD912;
 	#define StaticFindObject = 0x6AF146;
 
 	// === Legacy UWorld (encrypted) ===
-	#define UWORLD = 0x1A6536B0;
+	#define UWORLD = 0x1b156318;
 	#define GAME_INSTANCE = 0x240;
 	#define LOCAL_PLAYERS = 0x38;
 	#define PLAYER_CONTROLLER = 0x30;
