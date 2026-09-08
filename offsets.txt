@@ -8,7 +8,7 @@
 
 // === Engine Globals ===
 #define GNames = 0x1B00A8C0;
-#define GEngine = 0x1b157c88;
+#define GEngine = 0x1A9E7BD8;
 
 // === Function Offsets ===
 #define ProcessEvent = 0xBD912;
@@ -36,7 +36,7 @@
 #define LAST_SUBMIT_TIME = 0x290;
 #define LAST_SUBMIT_TIME_ON_SCREEN = 0x7B0;
 #define PERSISTENT_LEVEL = 0x38;
-#define ENGINE_OFFSET = 0x1A655088;
+#define ENGINE_OFFSET = 0x1A9E7BD8;
 #define VIEWPORT_OFFSET = 0xB70;
 #define VELOCITY = 0x188;
 #define CURRENT_WEAPON = 0x9A0;
