@@ -3,8 +3,8 @@
 #define CameraLocation = 0x168;
 #define CameraRotation = 0x178;
 #define CachedViewInfoRenderedLastFrame = 0x178;
-#define Seeconds = 0x198;
-#define DELTA_TIME = 0x7B0;
+#define Seeconds = 0x188;
+#define DELTA_TIME = 0x7D4;
 
 // === Engine Globals ===
 #define GNames = 0x1B00A8C0;
@@ -34,7 +34,7 @@
 #define BONE_ARRAY_CACHE = 0x670;
 #define BoneMatrix = 0xA05D56;
 #define LAST_SUBMIT_TIME = 0x290;
-#define LAST_SUBMIT_TIME_ON_SCREEN = 0x7B0;
+#define LAST_SUBMIT_TIME_ON_SCREEN = 0x290;
 #define PERSISTENT_LEVEL = 0x38;
 #define ENGINE_OFFSET = 0x1A9E7BD8;
 #define VIEWPORT_OFFSET = 0xB70;
