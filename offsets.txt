@@ -3,7 +3,7 @@
 #define CameraLocation = 0x168;
 #define CameraRotation = 0x178;
 #define CachedViewInfoRenderedLastFrame = 0x178;
-#define Seeconds = 0x188;
+#define Seeconds = 0x198;
 #define DELTA_TIME = 0x7B0;
 
 // === Engine Globals ===
