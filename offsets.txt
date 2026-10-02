@@ -8,14 +8,14 @@
 
 // === Engine Globals ===
 #define GNames = 0x1B00A8C0;
-#define GEngine = 0x1A9E7BD8;
+#define GEngine = 0x1AC83068;
 
 // === Function Offsets ===
 #define ProcessEvent = 0xBD912;
 #define StaticFindObject = 0x5EBDD4;
 
 // === Legacy UWorld (encrypted) ===
-#define UWORLD = 0x1A821DE8;
+#define UWORLD = 0x1AC816F8;
 #define GAME_INSTANCE = 0x240;
 #define LOCAL_PLAYERS = 0x38;
 #define PLAYER_CONTROLLER = 0x30;
@@ -33,8 +33,8 @@
 #define BONE_ARRAY = 0x660;
 #define BONE_ARRAY_CACHE = 0x670;
 #define BoneMatrix = 0xA05D56;
-#define LAST_SUBMIT_TIME = 0x290;
-#define LAST_SUBMIT_TIME_ON_SCREEN = 0x7B0;
+#define LAST_SUBMIT_TIME = 0x548;
+#define LAST_SUBMIT_TIME_ON_SCREEN = 0x538;
 #define PERSISTENT_LEVEL = 0x38;
 #define ENGINE_OFFSET = 0x1A9E7BD8;
 #define VIEWPORT_OFFSET = 0xB70;
