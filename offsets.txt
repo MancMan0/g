@@ -5,8 +5,8 @@
 // Camera
 #define CameraLocation 0x178
 #define CameraRotation 0x188
-#define CachedViewInfoRenderedLastFrame 0x178
-#define Seeconds 0x198
+#define CachedViewInfoRenderedLastFrame 0x188
+#define Seeconds 0x7B8
 #define DELTA_TIME 0x7D4
 
 // === Engine Globals ===
@@ -36,7 +36,7 @@
 #define BONE_ARRAY 0x660
 #define BONE_ARRAY_CACHE 0x670
 #define BoneMatrix 0x70917C
-#define LAST_SUBMIT_TIME 0x2E8
+#define LAST_SUBMIT_TIME 0x198
 #define LAST_SUBMIT_TIME_ON_SCREEN 0x2EC
 #define PERSISTENT_LEVEL 0x38
 #define ENGINE_OFFSET 0x1A9E7BD8
