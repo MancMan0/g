@@ -6,7 +6,7 @@
 #define CameraLocation 0x178
 #define CameraRotation 0x188
 #define CachedViewInfoRenderedLastFrame 0x188
-#define Seeconds 0x7B8
+#define Seeconds 0x1A8
 #define DELTA_TIME 0x7D4
 
 // === Engine Globals ===
