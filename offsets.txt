@@ -8,7 +8,7 @@
 
 // === Engine Globals ===
 #define GNames = 0x1B00A8C0;
-#define GEngine = 0x1B098778;
+#define GEngine = 0x1C8E2F48;
 
 // === Function Offsets ===
 #define ProcessEvent = 0xBD912;
@@ -27,7 +27,7 @@
 #define PLAYER_STATE = 0x290;
 #define TEAM_INDEX = 0xf69;
 #define GAME_STATE = 0x1D0;
-#define PLAYER_ARRAY = 0x288;
+#define PLAYER_ARRAY = 0x290;
 #define MESH = 0x2F0;
 #define COMPONENT_TO_WORLD = 0x1E0;
 #define BONE_ARRAY = 0x660;
