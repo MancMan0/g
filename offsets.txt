@@ -50,7 +50,7 @@
 #define PLATFORM 0x408
 #define WEAPON_NAME 0x40
 #define ISDYING 0x738
-#define PLAYERNAME 0x9E8
+#define PLAYERNAME 0x9F0
 #define DEFAULTFOV 0x37C
 #define BASEFOV 0x37C
 #define PLAYER_ID 0x274
